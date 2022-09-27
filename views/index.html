@@ -29,14 +29,31 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-      height: 250px;
+      height: 200px;
       width: 33.3333%;
     }
+
+  .slideScore, .teamName{
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .slideScore{
+    width: 380px;
+    justify-content: center;
+  }
+
+  .teamName{
+    justify-content: space-around;
+    width: 400px;
+  }
 
     .results{
       display: flex;
       flex-direction: column;
       justify-content: center;
+      border: 1px solid black;
 
     }
 
@@ -78,7 +95,7 @@
           </a>
 
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2   justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 text-white">All Leagues</a></li>
+            <li><a href="/views/public/leagues.html" class="nav-link px-2 text-white">All Leagues</a></li>
             <li><a href="#" class="nav-link px-2 text-white">News</a></li>
             <li><a href="#" class="nav-link px-2 text-white">Cups</a></li>
             <li><a href="#" class="nav-link px-2 text-white">Discussion</a></li>
@@ -111,22 +128,55 @@
           <div class="containerOne">
             <div class="carousel-captionOne">
               <div class = "results">
-                <h1>Real Madrid vs Barcelona</h1>
-                <p>2-1</p>
+
+                <div class="slide  teamName">
+                  <h1 class="firstSlideOneNameHome"> </h1>
+                  <span class="versus">VS</span>
+                  <h1 class="firstSlideOneNameAway"> </h1>
+                </div>
+
+              <div class="slideScore ">
+                <p class="firstSlideOneHomeScore"> </p>
+                <span class="versus">-</span>
+                <p class="firstSlideOneAwayScore"> </p>
+              </div>
+              
               </div>
             </div>
 
             <div class="carousel-captionOne">
               <div class = "results">
-                <h1>Real Madrid vs Barcelona</h1>
-                <p>2-1</p>
+
+                <div class="slide  teamName">
+                  <h1 class="firstSlideTwoNameHome"> </h1>
+                  <span class="versus">VS</span>
+                  <h1 class="firstSlideTwoNameAway"> </h1>
+                </div>
+
+              <div class="slideScore ">
+                <p class="firstSlideTwoHomeScore"> </p>
+                <span class="versus">-</span>
+                <p class="firstSlideTwoAwayScore"> </p>
+              </div>
+
               </div>
             </div>
 
             <div class="carousel-captionOne">
               <div class = "results">
-                <h1>Real Madrid vs Barcelona</h1>
-                <p>2-1</p>
+
+                <div class="slide  teamName">
+                  <h1 class="firstSlideThreeNameHome"> </h1>
+                  <span class="versus">VS</span>
+                  <h1 class="firstSlideThreeNameAway"> </h1>
+                </div>
+
+              <div class="slideScore ">
+                <p class="firstSlideThreeHomeScore"> </p>
+                <span class="versus">-</span>
+                <p class="firstSlideThreeAwayScore"> </p>
+              </div>
+
               </div>
             </div>
 
@@ -248,7 +298,7 @@
 
 
 
-
+    <script src="main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>

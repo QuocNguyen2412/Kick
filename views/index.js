@@ -20,8 +20,8 @@ function getFetch(){
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': "",
-      'X-RapidAPI-Host': ""
+      'X-RapidAPI-Key': "2f9dd892cc4442221c562ec3d3d0ef91",
+      'X-RapidAPI-Host': "v3.football.api-sports.io"
     }
   };
 
@@ -57,3 +57,19 @@ function getFetch(){
           console.log(`error ${err}`)
       });
 }
+
+
+// var myHeaders = new Headers();
+// myHeaders.append("x-rapidapi-key", "2f9dd892cc4442221c562ec3d3d0ef91");
+// myHeaders.append("x-rapidapi-host", "v3.football.api-sports.io");
+
+// var requestOptions = {
+//   method: 'GET',
+//   headers: myHeaders,
+//   redirect: 'follow'
+// };
+
+// fetch("https://v3.football.api-sports.io/{endpoint}", requestOptions)
+//   .then(response => response.text())
+//   .then(result => console.log(result))
+//   .catch(error => console.log('error', error));
